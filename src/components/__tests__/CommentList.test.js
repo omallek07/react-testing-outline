@@ -19,12 +19,7 @@ beforeEach(() => {
   );
 });
 
-// afterEach(() => {
-//   wrapped.unmount();
-// });
-
 it('creates one LI per comment', () => {
-  console.log('wrapped', wrapped.find('li'))
   expect(wrapped.find('li').length).toEqual(2);
 });
 
